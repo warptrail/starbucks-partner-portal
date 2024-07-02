@@ -28,6 +28,7 @@ body {
   height: 100%;
   pointer-events: none; /* Allow clicks to pass through */
   z-index: -1; /* Place behind all other content */
+  display: none;
 }
 
 header {
@@ -161,6 +162,9 @@ p {
 }
 
 @media (min-width: 600px) {
+  #glow-container {
+    display: block;
+  }
   .link-container {
     flex-direction: row;
     flex-wrap: wrap;
