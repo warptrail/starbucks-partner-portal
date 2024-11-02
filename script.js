@@ -21,11 +21,6 @@ function updateGlowEffect(e) {
   const gradient = `radial-gradient(circle at ${mouseX}px ${mouseY}px, hsla(${hue}, 100%, 50%, 0.5), rgba(255, 255, 255, 0) ${gradientSize}px)`;
 
   document.getElementById('glow-container').style.background = gradient;
-
-  // Update the background with the new gradient
-  // document.body.style.background = `linear-gradient(135deg, #006341 0%, #024024 100%), ${gradient}`;
-  // document.body.style.backgroundSize = 'cover';
-  // document.body.style.backgroundBlendMode = 'screen';
 }
 
 document.addEventListener('mousemove', updateGlowEffect);
